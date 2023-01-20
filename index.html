@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--FAV ICON-->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!--GOOGLE FONT SONO-->
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
     <!--BOOTSTRAP CSS-->
-    <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -16,11 +17,98 @@
     <title>Portafolio</title>
 </head>
 <body>
-    <h1>Jonathan Scorpaniti</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci modi reprehenderit, facilis nulla excepturi?</p>
+  <!--NAVEGACION-->
+  <div class="row">
+  <div class="col">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/favicon.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://instagram.com/Joniiscorpa" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/jonathan-scorpaniti-584b9b256/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="https://github.com/JScorpaniti" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-secondary btn-login">Iniciar sesion</button>
+          </form>
+        </div>
+        </div>
+      </nav>
+  </div>
+  </div>
+  <!--BANNER-->
+  <hr class="nav-acerca">
+  <div class="row" id="banner">
+    <div class="banner">
+      <div class="col">
+      </div>
+    </div>
+  </div>
+  <!--PRESENTACION-->
+  <div class="row">
+    
+    <div class="presentacion">
+      <div class="col columna2">
+        <div class="avatar-cont">
+          <img src="images/avatar.png" alt="" class="avatar">
+        </div>
+        
+        <article class="acerca-de-mi">
+          <h4>Jonathan Scorpaniti</h1>
+          <h5>Fullstack Developer</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus distinctio soluta impedit officia, maxime nihil earum quod illum voluptatem quasi. Error, odio? Soluta saepe libero repellat ut dignissimos quos temporibus! Nesciunt, tenetur temporibus. Doloribus hic nobis amet quam iusto?</p>
+        </article>
+      </div>
+    </div>
+  </div>
+  <!--EXPERIENCIA-->
+  <hr class="acerca-exp">
+  <h1 class="title-exp">EXPERIENCIA</h1>
+  <div class="accordion empresa" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <img src="images/logonotification.png" alt="">
+          <p>Notification Button</p>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          En esta empresa realice una colaboracion para la adaptacion del proyecto hacia la plataforma prestashop, me encargue de configurar las paginas de configuracion y de diseñar las mismas.</div>
+      </div>
+    </div>
+  </div>
 
-
-
+  <!--EDUCACION-->
+  <hr>
+  <h1 class="title-edu">EDUCACION</h1>
+  <div class="card-container">
+  <div class="card" style="width: 18rem;">
+    <img src="Images/escuela.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5>COLEGIO DEL MONTE</h5>
+      <p class="card-text">Educacion secundaria completa<br> Finalizacion ciclo lectivo en 2020</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="Images/argprograma.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5>ARGENTINA PROGRAMA</h5>
+      <p class="card-text">Curso Argentina programa en proceso</p>
+    </div>
+  </div> 
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
